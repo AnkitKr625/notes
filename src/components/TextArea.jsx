@@ -1,9 +1,10 @@
 import React from "react";
+import './TextArea.css';
 
 function TextArea({ newNote, setNewNote }) {
   return (
     <>
-      <header className="text-area-header"></header>
+      <header className="text-area-header textarea-header"></header>
       <textarea
         name="notes"
         placeholder="write something..."
