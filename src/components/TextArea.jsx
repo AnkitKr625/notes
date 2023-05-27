@@ -3,7 +3,7 @@ import './TextArea.css';
 
 function TextArea({ newNote, setNewNote }) {
   return (
-    <>
+    <div className="textarea">
       <header className="text-area-header textarea-header"></header>
       <textarea
         name="notes"
@@ -13,7 +13,7 @@ function TextArea({ newNote, setNewNote }) {
         rows={20}
         cols={100}
       />
-    </>
+    </div>
   );
 }
 
