@@ -3,10 +3,11 @@
 }
 .textarea-header {
   height: 20px;
-  height: 100%;
+  width: 100%;
   border: 2px solid gray;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
+  padding: 4px;
 }
