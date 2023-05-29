@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <TextArea newNote={text} setNewNote={setText}/>
-      hello
+      {text}
     </div>
   )
 }

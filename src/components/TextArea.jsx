@@ -1,13 +1,20 @@
 import React from "react";
-import './TextArea.css';
+import { makeBold, makeItalic, makeUnderline } from "../util/utllity";
+import "./TextArea.css";
 
 function TextArea({ newNote, setNewNote }) {
   return (
     <div className="textarea">
       <header className="text-area-header textarea-header">
-        <strong>B</strong>
-        <i>I</i>
-        <span>U</span>
+        <strong className="cursor-pointer" onClick={makeBold}>
+          B
+        </strong>
+        <i className="cursor-pointer" onClick={makeItalic}>
+          I
+        </i>
+        <span className="cursor-pointer" onClick={makeUnderline}>
+          U
+        </span>
       </header>
       <textarea
         name="notes"
